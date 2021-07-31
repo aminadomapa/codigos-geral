@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import random
+
+arquivo = open('tabela15.csv','r')
+
+for linha in arquivo:
+    valores = linha.split(',')        
+    escolhido =random.choice(valores)
+    print (escolhido)
+arquivo.close()
